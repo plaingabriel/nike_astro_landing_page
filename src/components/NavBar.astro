@@ -1,0 +1,22 @@
+---
+import NavLink from "./NavLink.astro";
+---
+
+<nav
+  class="flex h-full w-full items-center justify-between text-lg tracking-wide"
+>
+  <section>
+    <img src="/header-logo.svg" alt="Nike Logo" />
+  </section>
+
+  <ul class="flex gap-x-[80px] text-slate-gray">
+    <NavLink href="#home" title="Home" />
+    <NavLink href="#about-us" title="About Us" />
+    <NavLink href="#products" title="Products" />
+    <NavLink href="#contact-us" title="Contact Us" />
+  </ul>
+
+  <section>
+    <button>Change the theme</button>
+  </section>
+</nav>

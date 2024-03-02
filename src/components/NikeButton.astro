@@ -1,0 +1,14 @@
+---
+import RightArrow from "../components/RightArrow.astro";
+
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<button
+  class="flex justify-center gap-x-4 rounded-full border bg-coral-red px-7 py-4 font-montserrat text-lg text-white transition duration-300 hover:border-coral-red hover:bg-white-400 hover:text-coral-red active:bg-coral-red active:text-white"
+  >{text} <RightArrow /></button
+>

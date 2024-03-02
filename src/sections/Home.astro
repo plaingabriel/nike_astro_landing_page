@@ -1,0 +1,38 @@
+---
+import { ChangeShoe } from "../components/ChangeShoe.tsx";
+import Stats from "../components/Stats.astro";
+import NikeButton from "../components/NikeButton.astro";
+---
+
+<section id="home">
+  <h4 class="my-6 font-montserrat text-xl text-coral-red">
+    Our Summer collections
+  </h4>
+
+  <h1
+    class="leading-1 mb-10 max-w-[700px] text-balance font-palanquin text-8xl font-extrabold"
+  >
+    The New Arrival <span class="text-coral-red">Nike</span> Shoes
+  </h1>
+
+  <h4
+    class="mb-16 max-w-[500px] text-balance font-montserrat text-lg leading-8 text-slate-gray"
+  >
+    Discover stylish Nike arrivals, quality comfort, and innovation for your
+    active life.
+  </h4>
+
+  <NikeButton text="Shop Now" />
+
+  <section class="mt-24 flex gap-x-16">
+    <Stats cant="1k+" unit="Brands" />
+    <Stats cant="500+" unit="Shops" />
+    <Stats cant="250k+" unit="Customers" />
+  </section>
+
+  <div
+    class="absolute right-0 top-0 -z-10 flex h-[100vh] w-[50vw] flex-col rounded-sm bg-hero bg-cover bg-center"
+  >
+    <ChangeShoe client:visible />
+  </div>
+</section>

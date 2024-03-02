@@ -1,0 +1,13 @@
+---
+interface Props {
+  cant: string;
+  unit: string;
+}
+
+const { cant, unit } = Astro.props;
+---
+
+<div>
+  <span class="font-palanquin text-4xl font-extrabold">{cant}</span>
+  <p class="font-palanquin text-lg text-slate-gray">{unit}</p>
+</div>
