@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  price: string;
+  src: string;
+  puntuation: string;
+}
+
+const { title, price, src, puntuation } = Astro.props;
+
+import Stars from "../components/Stars.astro";
+---
+
+<div>
+  <img src={src} alt={title} />
+
+  <div class="mt-8 flex flex-col gap-y-2">
+    <Stars puntuation={puntuation} />
+    <h3 class="font-palanquin text-2xl font-semibold">{title}</h3>
+    <p class="font-montserrat text-2xl font-semibold text-coral-red">
+      ${price}
+    </p>
+  </div>
+</div>
