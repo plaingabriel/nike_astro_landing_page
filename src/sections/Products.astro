@@ -1,1 +1,49 @@
-<section id="products"></section>
+---
+import Strong from "../components/Strong.astro";
+import ProductsCard from "../components/ProductsCards.astro";
+---
+
+<section id="products">
+  <header class="mb-[70px]">
+    <h2 class="leading-1 mb-6 font-palanquin text-4xl font-extrabold">
+      Our <Strong text="Popular" /> Products
+    </h2>
+
+    <p
+      class="h-auto max-w-lg text-pretty font-montserrat text-base leading-6 text-slate-gray"
+    >
+      Experience top-notch quality and style with our sought-after selections.
+      Discover a world of comfort, design, and value
+    </p>
+  </header>
+
+  <main class="flex w-full justify-between">
+    <ProductsCard
+      title="Nike Air Jordan-01"
+      puntuation="4.5"
+      price="200.20"
+      src="/shoe4.svg"
+    />
+
+    <ProductsCard
+      title="Nike Air Jordan-10"
+      puntuation="4.6"
+      price="210.20"
+      src="/shoe5.svg"
+    />
+
+    <ProductsCard
+      title="Nike Air Jordan-100"
+      puntuation="4.9"
+      price="220.20"
+      src="/shoe6.svg"
+    />
+
+    <ProductsCard
+      title="Nike Air Jordan-001"
+      puntuation="4.7"
+      price="230.20"
+      src="/shoe7.svg"
+    />
+  </main>
+</section>
