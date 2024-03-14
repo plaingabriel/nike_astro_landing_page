@@ -2,6 +2,7 @@
 import { ChangeShoe } from "../components/ChangeShoe.tsx";
 import Stats from "../components/Stats.astro";
 import NikeButton from "../components/NikeButton.astro";
+import Strong from "../components/Strong.astro";
 ---
 
 <section id="home">
@@ -13,15 +14,15 @@ import NikeButton from "../components/NikeButton.astro";
     <h1
       class="leading-1 mb-10 max-w-[700px] text-balance font-palanquin text-8xl font-extrabold"
     >
-      The New Arrival <span class="text-coral-red">Nike</span> Shoes
+      The New Arrival <Strong text="Nike" /> Shoes
     </h1>
 
-    <h4
+    <p
       class="mb-16 max-w-[500px] text-balance font-montserrat text-lg leading-8 text-slate-gray"
     >
       Discover stylish Nike arrivals, quality comfort, and innovation for your
       active life.
-    </h4>
+    </p>
 
     <NikeButton text="Shop Now" />
   </section>
