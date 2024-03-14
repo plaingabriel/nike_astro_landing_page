@@ -1,4 +1,4 @@
-# Project to practice tailwind cloning a project from a the JS Mastery Tailwind course, using Astro 🚀
+# Project to practice tailwind, cloning a project from the JS Mastery Tailwind course, using Astro 🚀
 
 I recreate the Nike Landing Page made by JS Mastery on his Tailwind YouTube course. I make the most part of the code for my own in order to practice Tailwind without needing to use the tutorial.
 
