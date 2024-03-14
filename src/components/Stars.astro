@@ -1,0 +1,14 @@
+---
+interface Props {
+  puntuation: String;
+}
+
+const { puntuation } = Astro.props;
+
+import Star from "../components/Star.astro";
+---
+
+<span
+  class="flex items-center gap-x-3 font-montserrat text-lg font-normal text-slate-gray"
+  ><Star />({puntuation})</span
+>
