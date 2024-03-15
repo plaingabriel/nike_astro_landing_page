@@ -1,0 +1,30 @@
+---
+import Strong from "../../components/Strong.astro";
+import NikeButton from "../../components/NikeButton.astro";
+---
+
+<section class="flex items-center gap-x-[200px]">
+  <section>
+    <h2 class="mb-8 max-w-[500px] font-palanquin text-4xl font-extrabold">
+      We Provide You <Strong text="Super Quality" /> Shoes
+    </h2>
+    <p>
+      Ensuring premium comfort and style, our meticulously crafted footwear is
+      designed to elevate your experience, providing you with unmatched quality,
+      innovation, and a touch of elegance.
+    </p>
+    <p>Our dedication to detail and excellence ensures your satisfaction</p>
+
+    <NikeButton text="View Details" />
+  </section>
+
+  <section>
+    <img src="/shoe8.svg" alt="shoe" />
+  </section>
+</section>
+
+<style>
+  p {
+    @apply mb-6 max-w-[500px] text-pretty font-montserrat text-lg leading-7 text-slate-gray;
+  }
+</style>

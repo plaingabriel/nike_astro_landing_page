@@ -1,0 +1,34 @@
+---
+import AboutCard from "../../components/AboutCard.astro";
+import TruckFast from "../../components/icons/TruckFast.astro";
+import ShieldTick from "../../components/icons/ShieldTick.astro";
+import Support from "../../components/icons/Support.astro";
+import CoverIcon from "../../components/CoverIcon.astro";
+---
+
+<section class="flex w-full justify-center gap-x-8">
+  <AboutCard
+    title="Free Shipping"
+    content="Enjoy seamless shopping with our complimentary shipping service."
+  >
+    <CoverIcon>
+      <TruckFast />
+    </CoverIcon>
+  </AboutCard>
+
+  <AboutCard
+    title="Secure Payment"
+    content="Experience worry-free transactions with our secure payment options."
+    ><CoverIcon>
+      <ShieldTick />
+    </CoverIcon>
+  </AboutCard>
+
+  <AboutCard
+    title="Love to help you"
+    content="Our dedicated team is here to assist you every step of the way."
+    ><CoverIcon>
+      <Support />
+    </CoverIcon>
+  </AboutCard>
+</section>
