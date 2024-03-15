@@ -1,1 +1,17 @@
-<section id="contact-us"></section>
+---
+import Strong from "../components/Strong.astro";
+import NikeButton from "../components/NikeButton.astro";
+---
+
+<section id="contact-us" class="mb-[100px] flex w-full justify-between">
+  <h2 class="max-w-md font-palanquin text-4xl font-bold">
+    Sign Up for <Strong text="Updates" /> & Newsletter
+  </h2>
+  <section
+    class="flex w-[45%] justify-between self-end rounded-full border border-slate-gray px-4 py-2"
+  >
+    <input type="text" placeholder="subscribe@nike.com" /><NikeButton
+      text="Sign Up"
+    />
+  </section>
+</section>
