@@ -21,7 +21,7 @@ export function ChangeShoe() {
   };
 
   return (
-    <div class="absolute right-0 top-0 -z-10 flex min-h-full w-[50vw] items-center justify-center rounded-sm bg-hero bg-cover bg-center">
+    <div class="relative flex min-h-screen flex-1 items-center justify-center rounded-sm bg-hero bg-cover bg-center">
       <img
         src={selectedBigShoe}
         alt="Shoe at big scale"

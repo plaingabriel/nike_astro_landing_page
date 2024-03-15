@@ -5,14 +5,17 @@ import NikeButton from "../components/NikeButton.astro";
 import Strong from "../components/Strong.astro";
 ---
 
-<section id="home" class="mb-[180px]">
-  <section class="z-50">
+<section
+  id="home"
+  class="mb-[180px] flex min-h-screen w-full gap-10 ps-[70px] xl:flex-row"
+>
+  <section class="relative flex w-2/5 flex-col items-start justify-center">
     <h4 class="my-6 font-montserrat text-xl text-coral-red">
       Our Summer collections
     </h4>
 
     <h1
-      class="leading-1 mb-10 max-w-[700px] text-balance font-palanquin text-8xl font-extrabold"
+      class="leading-1 relative z-10 mb-10 max-w-[700px] text-balance pr-10 font-palanquin text-8xl font-bold"
     >
       The New Arrival <Strong text="Nike" /> Shoes
     </h1>
@@ -25,12 +28,12 @@ import Strong from "../components/Strong.astro";
     </p>
 
     <NikeButton text="Shop Now" />
-  </section>
 
-  <section class="mt-24 flex gap-x-16">
-    <Stats cant="1k+" unit="Brands" />
-    <Stats cant="500+" unit="Shops" />
-    <Stats cant="250k+" unit="Customers" />
+    <section class="mt-24 flex gap-x-16">
+      <Stats cant="1k+" unit="Brands" />
+      <Stats cant="500+" unit="Shops" />
+      <Stats cant="250k+" unit="Customers" />
+    </section>
   </section>
 
   <ChangeShoe client:visible />
