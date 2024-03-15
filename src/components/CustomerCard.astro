@@ -1,0 +1,35 @@
+---
+interface Props {
+  name: string;
+  src: string;
+  content: string;
+  puntuation: string;
+}
+
+const { src, name, content, puntuation } = Astro.props;
+
+import Stars from "../components/Stars.astro";
+---
+
+<article class="flex w-[350px] flex-col items-center gap-y-4">
+  <header>
+    <img
+      class="h-auto w-[120px] rounded-full"
+      src={src}
+      alt=`Customer: ${name}`
+    />
+  </header>
+
+  <main class="flex flex-col items-center">
+    <p
+      class="text-oretty mb-4 text-center font-montserrat text-lg leading-7 text-slate-gray"
+    >
+      {content}
+    </p>
+    <Stars puntuation={puntuation} />
+  </main>
+
+  <footer>
+    <h3 class="font-palanquin text-2xl font-semibold">{name}</h3>
+  </footer>
+</article>
