@@ -1,1 +1,13 @@
-<section id="about-us"></section>
+---
+import Hero from "../sections/contactUs/Hero.astro";
+import AboutCards from "../sections/contactUs/AboutCards.astro";
+import SpecialOffer from "./contactUs/SpecialOffer.astro";
+import CostumerSays from "./contactUs/CostumerSays.astro";
+---
+
+<section id="about-us" class="mb-[180px] flex flex-col gap-y-[180px]">
+  <Hero />
+  <AboutCards />
+  <SpecialOffer />
+  <CostumerSays />
+</section>
