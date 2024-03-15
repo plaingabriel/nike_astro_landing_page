@@ -1,0 +1,49 @@
+---
+import Strong from "../../components/Strong.astro";
+import NikeButton from "../../components/NikeButton.astro";
+---
+
+<section class="mb-[180px] flex w-full items-center gap-x-8">
+  <div class="flex-1">
+    <img
+      class="w-full object-contain"
+      src="/offer.svg"
+      alt="30% offert on shoes"
+      width="773"
+      height="687"
+    />
+  </div>
+
+  <div class="flex flex-1 flex-col">
+    <header>
+      <h2 class="mb-8 font-palanquin text-4xl font-extrabold">
+        <Strong text="Special" /> Offer
+      </h2>
+    </header>
+    <main>
+      <p>
+        Embark on a shopping journey that redefines your experience with
+        unbeatable deals. From premier selections to incredible savings, we
+        offer unparalleled value that sets us apart.
+      </p>
+      <p>
+        Navigate a realm of possibilities designed to fulfill your unique
+        desires, surpassing the loftiest expectations. Your journey with us is
+        nothing short of exceptional.
+      </p>
+    </main>
+    <footer class="flex gap-x-4">
+      <NikeButton text="Shop Now" />
+      <button
+        class="rounded-full border border-slate-gray px-8 py-4 font-montserrat text-lg text-slate-gray transition duration-300 hover:bg-slate-gray hover:text-white-400 active:bg-white-400 active:text-slate-gray"
+        >Learn more</button
+      >
+    </footer>
+  </div>
+</section>
+
+<style>
+  p {
+    @apply mb-6 max-w-[600px] text-pretty font-montserrat text-lg leading-7 text-slate-gray;
+  }
+</style>
