@@ -1,0 +1,78 @@
+---
+import FooterLink from "./FooterLink.astro";
+import Facebook from "./icons/Facebook.astro";
+import Instagram from "./icons/Instagram.astro";
+import Twitter from "./icons/Twitter.astro";
+import { footerLinks } from "../const.ts";
+---
+
+<footer class="bg-black pb-[100px]">
+  <main class="flex w-full justify-between px-[70px] pt-[80px] text-white">
+    <section class="flex max-w-[350px] flex-col">
+      <header class="mb-6">
+        <img src="/footer-logo.svg" alt="Nike Logo" width="150" height="40" />
+      </header>
+
+      <main class="mb-8">
+        <p class="font-montserrat text-base leading-7 text-white-400">
+          Get shoes ready for the new term at your nearest Nike store. Find Your
+          perfect Size In Store. Get Rewards
+        </p>
+      </main>
+
+      <footer class="flex gap-x-4">
+        <FooterLink><Facebook /></FooterLink>
+        <FooterLink><Twitter /></FooterLink>
+        <FooterLink><Instagram /></FooterLink>
+      </footer>
+    </section>
+
+    <section class="flex w-[60%] justify-between">
+      {
+        footerLinks.map((footerLink) => (
+          <article>
+            <header>
+              <h3>{footerLink.title}</h3>
+            </header>
+
+            <main>
+              <ul>
+                {footerLink.links.map((link) => (
+                  <li>
+                    <a href={link.link}>{link.name}</a>
+                  </li>
+                ))}
+              </ul>
+            </main>
+          </article>
+        ))
+      }
+    </section>
+  </main>
+
+  <footer
+    class="mt-14 flex flex-col items-center border-t-[1px] border-white text-white-400"
+  >
+    <p
+      class="max-w-[800px] px-[70px] pt-[50px] text-center font-montserrat text-base leading-6"
+    >
+      This page is a clone of the website created by JS Mastery on his Tailwind
+      Course. The most part of the code is written by me as part of a personal
+      challenge in order to practice Tailwind :)
+    </p>
+  </footer>
+</footer>
+
+<style>
+  h3 {
+    @apply mb-6 font-montserrat text-2xl font-medium leading-normal;
+  }
+
+  a {
+    @apply text-pretty font-montserrat text-base leading-7 text-white-400;
+  }
+
+  li {
+    @apply mb-2;
+  }
+</style>
